@@ -8,7 +8,7 @@ def run_main():
     main_script = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))), "app", "interface.py")
     print("\n",venv_python, "\n\n", main_script)
     print(os.path.isfile(venv_python), os.path.isfile(main_script))
-    time.sleep(15)
+
     if not os.path.exists(venv_python):
         print(f"Error: Virtual environment's pythonw.exe not found at {venv_python}.")
         sys.exit(2)
