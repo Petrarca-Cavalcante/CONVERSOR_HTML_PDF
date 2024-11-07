@@ -4,8 +4,8 @@ import sys
 
 def run_main():
     # Path to the pythonw.exe in the virtual environment
-    venv_python = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))), "venv", "Scripts", "pythonw.exe")  
-    main_script = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))), "app", "interface.py")
+    venv_python = os.path.join(os.path.dirname(__file__), "venv", "Scripts", "pythonw.exe")  
+    main_script = os.path.join(os.path.dirname(__file__), "app", "interface.py")
     print("\n",venv_python, "\n\n", main_script)
     print(os.path.isfile(venv_python), os.path.isfile(main_script))
 
